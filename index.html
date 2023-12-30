@@ -1,81 +1,52 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
-    <title>KARABATAK</title>
-</head>
-
-<body>
-    <header class="container">
-        <div class="page-header">
-            <div class="logo">
-                <a href="#">KARABATAK</a>
-            </div>
-            <input type="checkbox" id="click">
-
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </label>
-            <ul>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkModeToggle">
-                <i class='bx bxs-moon'></i>
-            </label>
-        </div>
-    </header>
-
-
-    <section class="container">
-        <div class="main">
-            <div class="images">
-                <img src="karabatak.gif" alt="" class="img-w">
-                <span class="bg-effect-1">
-                <span class="bg-effect-1"></span>
-
-                </span>
-            </div>
-            <div class="detail">
-                <h3>Merhaba Ben</h3>
-                <h1><span style="color:#f9532d;">KARABATAK</span> </h1> 
-                <p> KARABATAK yani Şuan 18 Yaşındayım Ve İlgi Alanım Yazılım.
-                </p>  
-                <div class="social">
-                    <!-- <a href="https://www.linkedin.com/in/vikash-web-dev/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a> -->
-                    <a href="https://www.instagram.com/k.arabatak.priv/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/KARABATAKdev" style="--socialAni:3"><i class='bx bxl-github'></i></a>
-                    <a href="https://discord.com/users/556499905665957909" style="--socialAni:4"><i class='bx bxl-discord'></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-        if (isDarkMode) {
-            body.classList.add('dark-mode');
-            darkModeToggle.checked = true;
-        }
-        darkModeToggle.addEventListener('change', () => {
-            if (darkModeToggle.checked) {
-                body.classList.add('dark-mode');
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                body.classList.remove('dark-mode');
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        });
-    </script>
-</body>
-
-</html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>KARABATAK</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>KARABATAK<hr></h3>
+		  <div align="center">
+			<a href="https://discord.com/users/556499905665957909 " title="Discord Account"><img src="https://lanyard-profile-readme.vercel.app/api/556499905665957909"></a>
+		</div>
+		  <p>Selamlar Ben KARABATAK yani Mert</p>
+		  <p>Şuan 18 Yaşındayım Ve İlgi Alanım Yazılım.</p>
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="https://discord.com/users/556499905665957909" target="_blank"><i class='fab fa-discord'></i></a>
+			  <a href="https://github.com/KARABATAKdev" target="_blank"><i class='fab fa-github'></i></a>
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
